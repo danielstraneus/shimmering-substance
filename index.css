@@ -19,7 +19,7 @@ body:before {
   opacity: 0.1;
   z-index: 1000000;
   pointer-events: none;
-  background-image: url(./22072325_6566231.jpg);
+  background-image: url(./grit.jpg);
   filter: brightness(100%) sepia(70%);
 }
 

@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0px;
+}
+
+body {
+  margin-top: 1em;
+  font-family: Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+body:before {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  content: "";
+  opacity: 0.1;
+  z-index: 1000000;
+  pointer-events: none;
+  background-image: url(./22072325_6566231.jpg);
+  filter: brightness(100%) sepia(70%);
+}
+
+#canvas {
+  position: absolute;
+  border: 8px solid black;
+  top: 3em;
+  margin: 0 auto;
+  bottom: 1em;
+  width: 100vw;
+  height: 100vh;
+  z-index: -10;
+  opacity: 1;
+  background: linear-gradient(#c1b790, #a8a162);
+  filter: brightness(100%) contrast(140%);
+}
+
+.frame-1 {
+  margin-top: 3em;
+  width: 1em;
+  height: 100vh;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: white;
+  border-right: 8px solid black;
+}
+.frame-2 {
+  margin-top: 3em;
+  width: 1em;
+  height: 100vh;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  background-color: white;
+  border-left: 8px solid black;
+}
+.frame-3 {
+  margin-left: 1em;
+  margin-right: 1em;
+  width: 100vw;
+  height: 1em;
+  position: absolute;
+  z-index: 1000;
+  bottom: 0;
+  border-top: 8px solid black;
+  background-color: white;
+}
+.frame-4 {
+  margin-top: 3em;
+  width: 1em;
+  height: 100vh;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  background-color: white;
+}
+
+h2,
+h3,
+a {
+  color: rgba(80, 80, 80, 0.9);
+}
+h2,
+h3,
+a {
+  text-decoration: none;
+  font-weight: 400;
+}
+h2,
+a {
+  font-size: 0.9em;
+  letter-spacing: 0.5px;
+}
+
+h2 {
+  position: absolute;
+  bottom: 0px;
+  margin-bottom: 2em;
+  right: 0;
+  margin-right: 2.2em;
+  color: rgba(80, 80, 80, 0.9);
+}
+
+#tjo {
+  font-weight: 400;
+  font-size: 1em;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: -1px;
+  font-weight: 900;
+  margin-left: 1em;
+}
+
+#button {
+  position: absolute;
+  padding: 3px 3px 3px 4px;
+  margin-top: 2em;
+  margin-left: 2em;
+  background: none;
+  font-size: 0.9em;
+  color: rgba(80, 80, 80, 0.3);
+  border: 2px solid rgba(80, 80, 80, 0.3);
+  border-radius: 5px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+#button:hover {
+  cursor: pointer;
+}
+h1::selection,
+h2::selection,
+h3::selection,
+a::selection,
+br::selection {
+  background-color: lime;
+  color: white;
+}
+
+@media screen and (min-width: 500px) {
+  #button:hover {
+    cursor: pointer;
+    color: #fffcac;
+    background-color: black;
+    border: 2px solid transparent;
+  }
+}
